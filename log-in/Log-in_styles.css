@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    height: 100vh;
+    background-image: url(https://jujutsukaisen.jp/images/top_r/mv_re_new.jpg);
+  }
+  
+  .container {
+    display: flex;
+  
+    background-color: #fdfff9;
+    align-items: center;
+    position: relative;
+    border-radius: 1.875rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  
+    width: 870px;
+    height: 500px;
+    max-width: 100%;
+    min-height: 480px;
+  }
+  .container--color {
+    background-color: #705695;
+    display: flex;
+    border: none;
+    width: 35%;
+    height: 100%;
+    border-radius: 1.875rem;
+    position: relative;
+    right: -35.8rem;
+    transform: translateX(0);
+  }
+  .imagen {
+    border-color: aqua;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border: none;
+    left: 4.375rem;
+    width: 67%;
+    height: 100%;
+    border-radius: 1.875rem;
+  
+    left: -70rem;
+    transform: translateX(0);
+  }
+  .img {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 87%;
+    left: 1rem;
+  }
+  
+  .container__child {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: none;
+    height: 100%;
+    width: 35%;
+    margin-left: 1.5rem;
+  }
+  .container__child__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 12%;
+    border: none;
+    border-color: blueviolet;
+    padding: 1rem, 1rem;
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  
+  #jjk {
+    margin-left: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 15vh;
+    height: auto;
+  }
+  
+  .container__child__title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 8%;
+    border: none;
+    border-color: aqua;
+    padding: 1rem, 2rem;
+    margin-left: 0;
+  }
+  #tittle__log {
+    font-size: 1.4rem;
+    margin-left: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .container__child__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 40%;
+    border: none;
+    border-color: brown;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+  .info__email {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 9vh;
+    border: none;
+    border-color: crimson;
+    margin-left: 0;
+    margin-bottom: 0rem;
+  }
+  .email--content {
+    margin-left: 1.5rem;
+  }
+  
+  .etiqueta {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.6rem;
+  }
+  .in {
+    background-color: #eee;
+    border: none;
+    margin: 0.125rem 0;
+    padding: 0.75rem 1.875rem;
+    font-size: 0.813rem;
+    border-radius: 1.875rem;
+    outline: none;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 18vw;
+    height: 4.5vh;
+  }
+  .placeholder {
+    margin-left: -1rem;
+  }
+  .info__password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 9vh;
+    border: none;
+    border-color: blue;
+    padding: 2rem, 4rem;
+    margin-left: 0;
+    margin-bottom: 0rem;
+  }
+  .password--content {
+    margin-left: 1.5rem;
+  }
+  .info__href {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 5vh;
+    border: none;
+    border-color: rgb(255, 121, 183);
+    padding: 2rem, 4rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0rem;
+  }
+  .href__forgot {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.6rem;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: #472a73;
+  }
+  .info__signin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 12vh;
+    border: none;
+    border-color: chartreuse;
+    padding: 2rem, 4rem;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #472a71;
+    border: none;
+    margin: 0.813rem 0;
+    border-radius: 1.875rem;
+    outline: none;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: white;
+    margin-left: 1.5rem;
+    width: 18vw;
+    height: 4.5vh;
+  }
+  
+  .container__child__additional {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20%;
+    border: none;
+    border-color: coral;
+    margin-left: 0;
+    margin-top: 0.2rem;
+  }
+  .container__additional__spam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 25%;
+    border: none;
+    border-color: darkgreen;
+  }
+  .container__additional__sites {
+    margin-left: 0.5rem;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50%;
+    border: none;
+    border-color: rgb(199, 58, 161);
+  }
+  
+  .additional__sites__google {
+    margin-right: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+    height: 100%;
+    border: none;
+    border-color: darkgreen;
+  }
+  .red {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: grey;
+    border-radius: 1.875rem;
+    width: 6vw;
+    height: 5vh;
+  }
+  .icon {
+    border: none;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.188rem;
+    width: 17px;
+    height: 17px;
+  }
+  .additional__sites__git {
+    margin-right: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+    height: 100%;
+    border: none;
+  }
+  .additional__sites__facebook {
+    margin-right: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+    height: 100%;
+    border: none;
+  }
+  .container__additional__register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+    border: none;
+    padding: 2rem, 4rem;
+    margin: left 0rem;
+    margin-bottom: 0rem;
+  }
+  
+  .additional__register--href {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 0.6rem;
+    text-decoration: none;
+  }
+  
+
