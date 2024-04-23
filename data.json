@@ -37,7 +37,8 @@
       "occupation": "Cursed Spirit",
       "powers": ["Malevolent Shrine", "Cursed energy manipulation"],
       "description": "A fearsome cursed spirit with immense power.",
-      "image": "https://jujutsukaisen.jp/assets/images/character/sukuna.png"
+      "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/sakuna.png"
+      
     },
     {
       "name": "Maki Zenin",
@@ -69,7 +70,7 @@
       "occupation": "Exorcist",
       "powers": ["Cursed energy manipulation", "Weapon summoning"],
       "description": "A member of the Zenin family with exceptional combat skills.",
-      "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/4.png"
+      "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/aoi.png"
     },
     {
       "name": "Aoi Todo",
@@ -93,7 +94,7 @@
         "occupation": "Cursed Spirit",
         "powers": ["Soul manipulation", "Cursed energy manipulation"],
         "description": "A dangerous cursed spirit with the ability to manipulate souls.",
-        "image": "https://jujutsukaisen.jp/assets/images/character/mahito.png"
+        "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/mahito.png"
     },
     {
       "name": "panda ",
@@ -109,7 +110,7 @@
       "occupation": "Sorcerer",
       "powers": ["Cursed energy manipulation", "Cursed techniques"],
       "description": "A powerful sorcerer with dark ambitions.",
-      "image": "https://jujutsukaisen.jp/assets/images/character/geto.png"
+      "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/geto.png"
     },
     {
         "name": "Shoko Ieiri",
