@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Yuji Itadori",
+    "age": 16,
+    "occupation": "Student",
+    "powers": ["Superhuman strength", "Cursed energy manipulation"],
+    "description": "The main protagonist of Jujutsu Kaisen.",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/assets-fotos/personajes/10.webp"
+  },
+  {
+    "id": 2,
+    "name": "Megumi Fushiguro",
+    "age": 15,
+    "occupation": "Student",
+    "powers": ["Cursed energy manipulation", "Summoning techniques"],
+    "description": "A student with great potential in combat.",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/assets-fotos/personajes/8.webp"
+  },
+  {
+    "id": 3,
+    "name": "Nobara Kugisaki",
+    "age": 16,
+    "occupation": "Student",
+    "powers": ["Cursed energy manipulation", "Straw doll technique"],
+    "description": "A skilled combatant with a unique fighting style.",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/assets-fotos/personajes/9.webp"
+  },
+  {
+    "id": 4,
+    "name": "Satoru Gojo",
+    "age": "Unknown",
+    "occupation": "Teacher",
+    "powers": ["Infinity", "Cursed energy manipulation"],
+    "description": "A powerful sorcerer and teacher at Tokyo Metropolitan Curse Technical College.",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/assets-fotos/personajes/1.webp"
+  },
+  {
+    "id": 5,
+    "name": "Sukuna",
+    "age": "Ancient",
+    "occupation": "Cursed Spirit",
+    "powers": ["Malevolent Shrine", "Cursed energy manipulation"],
+    "description": "A fearsome cursed spirit with immense power.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/sakuna.png"
+    
+  },
+  {
+    "id": 6,
+    "name": "Maki Zenin",
+    "age": 17,
+    "occupation": "Exorcist",
+    "powers": ["Superhuman strength", "Cursed energy manipulation"],
+    "description": "A skilled exorcist from the Zenin family.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/5.webp"
+  },
+  {
+    "id": 7,
+    "name": "Panda",
+    "age": "Unknown",
+    "occupation": "Special Grade Cursed Corpse",
+    "powers": ["Enhanced strength", "Cursed energy manipulation"],
+    "description": "A unique cursed corpse with incredible combat abilities.",
+    "image": "https://jujutsukaisen.jp/assets/images/character/panda.png"
+  },
+  {
+    "id": 8,
+    "name": "Toge Inumaki",
+    "age": 16,
+    "occupation": "Student",
+    "powers": ["Cursed speech", "Cursed energy manipulation"],
+    "description": "A student with the ability to use cursed words in combat.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/6.webp"
+  },
+  {
+    "id": 9,
+    "name": "Mai Zenin",
+    "age": 16,
+    "occupation": "Exorcist",
+    "powers": ["Cursed energy manipulation", "Weapon summoning"],
+    "description": "A member of the Zenin family with exceptional combat skills.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/aoi.png"
+  },
+  {
+    "id": 10,
+    "name": "Aoi Todo",
+    "age": 16,
+    "occupation": "Student",
+    "powers": ["Cursed energy manipulation", "Bo staff mastery"],
+    "description": "A confident and skilled fighter with a strong sense of justice.",
+    "image": "https://jujutsukaisen.jp/assets/images/character/todo.png"
+  },
+  {
+    "id": 11,
+    "name": "Kento Nanami",
+    "age": "Unknown",
+    "occupation": "Exorcist",
+    "powers": ["Cursed energy manipulation", "Technique mastery"],
+    "description": "An experienced exorcist with exceptional combat abilities.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/2.png"
+  },
+  {
+    "id": 12,
+    "name": "Mahito",
+    "age": "Unknown",
+    "occupation": "Cursed Spirit",
+    "powers": ["Soul manipulation", "Cursed energy manipulation"],
+    "description": "A dangerous cursed spirit with the ability to manipulate souls.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/mahito.png"
+  },
+  {
+    "id": 13,
+    "name": "panda ",
+    "age": "20",
+    "occupation": "Student",
+    "powers": ["Panda"],
+    "description": "a panda at Tokyo Metropolitan Curse Technical College.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/7.webp"
+  },
+  {
+    "id": 14,
+    "name": "Suguru Geto",
+    "age": "Unknown",
+    "occupation": "Sorcerer",
+    "powers": ["Cursed energy manipulation", "Cursed techniques"],
+    "description": "A powerful sorcerer with dark ambitions.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/geto.png"
+  },
+  {
+    "id": 15,
+    "name": "Shoko Ieiri",
+    "age": 28,
+    "occupation": "Teacher",
+    "powers": ["Cursed energy manipulation", "Healing techniques"],
+    "description": "A teacher at Tokyo Metropolitan Curse Technical College.",
+    "image": "https://github.com/LauBetancur/Entrega-2-/blob/main/assets-fotos/personajes/3.png"
+  }
+]
