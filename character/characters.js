@@ -8,7 +8,7 @@ const renderizarPersonajes = async () => {
         li.classList.add('productos__producto');
 
         const link = document.createElement('a');
-        link.href = `character-details.html?id=${personaje.id}`;
+        link.href = `characterdetails.html?id=${personaje.id}`;
 
         const img = document.createElement('img');
         img.src = personaje.image;
@@ -47,3 +47,4 @@ const renderizarPersonajes = async () => {
 document.addEventListener("DOMContentLoaded", function() {
     renderizarPersonajes();
 });
+

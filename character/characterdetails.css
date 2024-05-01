@@ -1,0 +1,29 @@
+/* Estilos para la página de detalles del personaje */
+.character-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.character-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.character-info {
+    max-width: 600px;
+    margin-left: 20px; /* Ajustar según sea necesario */
+}
+
+.character-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.character-info p {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}

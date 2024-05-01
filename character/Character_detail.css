@@ -159,7 +159,34 @@ nav img {
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
 }
+.Container__info--text--powers {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  text-align: flex-end;
+  color: #ffffff;
+  line-height: 2.3em;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
 .Container__info--text--p-sinspacing {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  text-align: flex-end;
+  color: #ffffff;
+}
+.Container__info--description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.25rem;
+  text-align: flex-end;
+  color: #ffffff;
+}
+.Container__info--occupation {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
