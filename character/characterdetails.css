@@ -1,29 +1,101 @@
 /* Estilos para la página de detalles del personaje */
-.character-details {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+  }
+  
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-image: url(../BACKGROUND_LOWOPACITY_Mesa\ de\ trabajo\ 1.jpg);
+    backdrop-filter: blur(4px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+  }
+  
+  nav {
+    display: flex;
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 150px;
+  }
+  
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.938rem;
+    font-weight: bold;
+  }
+  
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 0.2vh;
+    background: rgba(15, 188, 221, 1);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+    transition: 0.5s;
+  }
+  
+  .usser {
+    width: 50px;
+    border-radius: 5rem;
+  }
+  .character-details {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 76vh; /* Reduce height to give space */
     font-family: Arial, sans-serif;
 }
 
 .character-image img {
     max-width: 100%;
-    height: auto;
+    height: 80vh;
     border-radius: 10px;
+    margin-bottom: 10px; /* Reduce space between image and character info */
 }
 
 .character-info {
     max-width: 600px;
     margin-left: 20px; /* Ajustar según sea necesario */
+    color: rgb(255, 255, 249);
 }
 
 .character-info h1 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 3rem;
 }
 
 .character-info p {
     font-size: 1.2rem;
     margin-bottom: 8px;
+    
 }
