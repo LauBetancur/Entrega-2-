@@ -1,25 +1,28 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  font-style: normal;
 }
+
 
 body {
   height: 100vh;
-  background-image: url(../Frame\ 4.png);
+  background-image: url("../Frame 4.png"); 
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
+  font-style: normal; 
 }
 
+.headersearch-bar{
+  display: flex;
+  justify-content: center;
+}
 nav {
   display: flex;
   padding: 1rem 4rem;
   justify-content: space-between;
-  flex-direction: row;
   align-items: center;
 }
 
@@ -32,8 +35,12 @@ nav img {
   text-align: right;
 }
 
-.nav-links ul li {
+.nav-links ul {
   list-style: none;
+  display: inline-block; 
+}
+
+.nav-links ul li {
   display: inline-block;
   padding: 0.5rem 0.75rem;
   position: relative;
@@ -53,22 +60,39 @@ nav img {
   background: rgba(15, 188, 221, 1);
   display: block;
   margin: auto;
-  transition: 0.5s;
+  transition: width 0.5s;
 }
 
 .nav-links ul li:hover::after {
   width: 100%;
-  transition: 0.5s;
 }
 
 .usser {
   width: 60px;
-  border-radius: 5rem;
+  border-radius: 50%; 
 }
 
 .search-bar {
-  margin-top: 0.32rem;
+  border: 2px solid rgba(181, 153, 226, 1);
+  border-radius: 10px;
+  background-color: transparent; 
+  margin-top: 0.5rem; 
+  width: 18.75rem; 
+  display: flex; 
+  justify-content: flex-end;
+  padding: 0.313rem; 
 }
+
+.search-bar input {
+  flex: 1; 
+  outline: none;
+  border: none;
+  background: transparent; 
+  color: rgba(181, 153, 226, 1); 
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
 
 .text-box h1 {
   color: white;
@@ -87,11 +111,9 @@ nav img {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-
 }
 
 .productos ul {
-  
   list-style: none;
   padding: 0;
   display: flex;
@@ -105,7 +127,7 @@ nav img {
   margin-bottom: 4rem;
   padding: 1.25rem;
   border-radius: 0.625rem;
-  background-color: rgba(12, 2, 28, .4);
+  background-color: rgba(12, 2, 28, 0.4); /* Se corrigió el valor de la opacidad */
   box-shadow: 5px 7px 15px rgba(181, 153, 226, 1);
   text-align: center;
   transition: transform 0.6s ease;
@@ -123,13 +145,15 @@ nav img {
 }
 
 .productos li.productos__producto h2 {
-  text-decoration: none;
   color: white;
   font-size: 1rem;
   margin-top: 0.625rem;
   margin-bottom: 0.313rem;
+  text-decoration: none;
+  text-decoration-color: none;
 }
 
+/* Estilos para el icono de favorito */
 .star {
   cursor: pointer;
   color: #ddd;
@@ -143,15 +167,7 @@ nav img {
   color: gold;
 }
 
-.hidden-checkbox {
-  position: absolute;
-  left: -624.938rem;
-}
-
-.hidden-checkbox:checked + .star {
-  color: gold;
-}
-
+/* Estilos para el footer */
 footer {
   background-color: rgba(20, 7, 41, 1);
   padding: 2rem;
