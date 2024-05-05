@@ -126,7 +126,7 @@
     margin-bottom: 4rem;
     padding: 1.25rem;
     border-radius: 0.625rem;
-    background-color: rgba(12, 2, 28, 0.4); /* Se corrigió el valor de la opacidad */
+    background-color: rgba(12, 2, 28, 0.4); 
     box-shadow: 5px 7px 15px rgba(181, 153, 226, 1);
     text-align: center;
     transition: transform 0.6s ease;

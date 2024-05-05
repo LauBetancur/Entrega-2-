@@ -232,6 +232,7 @@ p {
 .productos li.productos__producto img {
   border-radius: 0.625rem;
   height: 9.375rem;
+  width:9.375rem;;
   object-fit: cover;
   cursor: pointer;
 }

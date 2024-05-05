@@ -2,91 +2,87 @@
   {
     "id": 1,
     "name": "Black Flash",
-    "image": "https://img.freepik.com/psd-gratis/icono-google-aislado-3d-renderizar-ilustracion_47987-9777.jpg?size=338&ext=jpg&ga=GA1.1.1687694167.1714780800&semt=sph",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/black%20flash.webp",
     "description": "Black Flash is a rare advanced cursed technique. It is an amplified physical attack that drastically increases the damage dealt by the user's strike."
   },
   {
     "id": 2,
     "name": "Divergent Fist",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Divergent%20fist.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Divergent%20fist.webp",
     "description": "Divergent Fist is a powerful cursed technique that manipulates the trajectory of the user's attacks, making them difficult to predict and defend against."
   },
   {
     "id": 3,
     "name": "Unlimited Void",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Unlimited%20void.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Unlimited%20void.webp",
     "description": "Unlimited Void is a unique cursed technique that creates a pocket dimension, allowing the user to manipulate space and teleport objects within the void."
   },
   {
     "id": 4,
     "name": "Domain Expansion: Malevolent Shrine",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Domain%20Expansion.webp",
-    "description": "Domain Expansion: Malevolent Shrine is a formidable cursed technique that creates a powerful barrier within a designated area, trapping and affecting anyone inside."
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Domain%20Expansion.webp"
   },
   {
     "id": 5,
     "name": "Cursed Energy Manipulation",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Cursed%20Energy.webp",
-    "description": "Cursed Energy Manipulation is the basic ability to control and manipulate cursed energy, the fundamental power source used in Jujutsu Kaisen's cursed techniques."
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Cursed%20Energy.webp"
   },
   {
     "id": 6,
     "name": "Reverse Cursed Technique: Removal",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Reverse%20Cursed%20Technique.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Reverse%20Cursed%20Technique.webp",
     "description": "Reverse Cursed Technique: Removal is a healing technique that reverses the effects of cursed energy, restoring the user's body and healing injuries."
   },
   {
     "id": 7,
     "name": "Maximum Cursed Energy Output: Cursed Spirit Manipulation",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Maximum%20Cursed%20Energy%20Output.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Maximum%20Cursed%20Energy%20Output.webp",
     "description": "Maximum Cursed Energy Output: Cursed Spirit Manipulation is a technique that allows the user to control and manipulate cursed spirits, using their own cursed energy to dominate them."
   },
   {
     "id": 8,
     "name": "Boogie Woogie",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Boogie%20Woogie.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Boogie%20Woogie.webp",
     "description": "Boogie Woogie is a spatial manipulation technique that allows the user to switch places with a target, creating confusion and tactical advantages in combat."
   },
   {
     "id": 9,
     "name": "Cursed Speech Manipulation",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Cursed%20Speech%20Manipulation.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Cursed%20Speech%20Manipulation.webp",
     "description": "Cursed Speech Manipulation is a technique that enables the user to imbue their words with cursed energy, influencing and controlling the actions of others."
   },
   {
     "id": 10,
     "name": "Innate Technique: Purple",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Innate%20Technique.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Innate%20Technique.webp",
     "description": "Innate Technique: Purple is a unique cursed technique that manifests as purple energy, granting the user enhanced strength, speed, and agility."
   },
   {
     "id": 11,
     "name": "Binding Vows",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Binding%20Vows.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Binding%20Vows.webp",
     "description": "Binding Vows are powerful agreements made with cursed spirits, granting the user access to their abilities and enhancing their own cursed techniques."
   },
   {
     "id": 12,
     "name": "Limitless Void",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Limitless%20Void.webp",
-    "description": "Limitless Void is an advanced form of Unlimited Void, granting the user even greater control over space and the ability to manipulate dimensions."
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Limitless%20Void.webp"
   },
   {
     "id": 13,
     "name": "Shikigami Summoning",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Shikigami%20Summoning.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Shikigami%20Summoning.webp",
     "description": "Shikigami Summoning is a powerful technique that  involves summoning powerful canine-like shikigami to aid in battle. These shikigami possess enhanced strength, agility, and mystical abilities, making them formidable allies in combat situations."
   },
   {
     "id": 14,
     "name": "Cursed Womb: Death Painting",
-    "image": "https://cdn.mos.cms.futurecdn.net/btAtRfudNNCNG36j6Ct7hN-1200-80.jpg",
-    "description": "Cursed Womb: Death Painting is a cursed object that contains a powerful cursed spirit, capable of causing devastation and chaos when unleashed."
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/cursed-womb.webp"
   },
   {
     "id": 15,
     "name": "Straw Doll Technique",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/Spells%20assets/Straw%20Doll%20Technique%20jjk.webp",
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Straw%20Doll%20Technique%20jjk.webp",
     "description": "The Straw Doll Technique is a cursed technique used by Nobara Kugisaki. It involves creating straw dolls infused with cursed energy, which she can control remotely. By attacking or damaging the dolls, she can transfer the damage to her enemies, making it an effective long-range and strategic technique in combat situations."  
   }
      ]
