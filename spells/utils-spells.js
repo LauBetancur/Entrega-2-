@@ -16,7 +16,7 @@ export class Spell {
         producto.classList.add("productos__producto");
 
         const link = document.createElement("a");
-        link.href = `characterdetails.html?id=${this.id}`;
+        link.href = `spellsdetail.html?id=${this.id}`;
 
         const img = document.createElement("img");
         img.src = this.image;

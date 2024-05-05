@@ -25,7 +25,8 @@
   {
     "id": 5,
     "name": "Cursed Energy Manipulation",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Cursed%20Energy.webp"
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/Cursed%20Energy.webp",
+    "description": "controlling negative emotions' potent force for offensive and defensive purposes."
   },
   {
     "id": 6,
@@ -77,7 +78,8 @@
   {
     "id": 14,
     "name": "Cursed Womb: Death Painting",
-    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/cursed-womb.webp"
+    "image": "https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/spells/Spells%20assets/cursed-womb.webp",
+    "description":"a powerful entity born from cursed energy, possessing immense strength and supernatural abilities."
   },
   {
     "id": 15,
