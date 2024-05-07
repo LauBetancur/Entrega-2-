@@ -12,7 +12,29 @@
     background-size: cover;
   
   }
-
+  
+  .search-bar {
+    border: 2px solid rgba(181, 153, 226, 1);
+    border-radius: 10px;
+    background-color: transparent; 
+    margin-top: 0.5rem; 
+    width: 18.75rem; 
+    display: flex; 
+    justify-content: flex-end;
+    padding: 0.313rem; 
+  }
+  
+  .search-bar input {
+    flex: 1; 
+    outline: none;
+    border: none;
+    background: transparent; 
+    color: rgba(181, 153, 226, 1); 
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+  
+  
   nav{ 
     display: flex;
     padding:  1rem 4rem;

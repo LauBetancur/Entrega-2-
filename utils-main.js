@@ -26,8 +26,8 @@ export class Spell {
         h2.textContent = this.name;
 
 
-        link.appendChild(img);
-        link.appendChild(h2);
+        producto.appendChild(img);
+        producto.appendChild(h2);
         
 
         producto.appendChild(link);
