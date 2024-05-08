@@ -1,5 +1,5 @@
 export const obtenerPersonajes = async () => {
-    const response = await fetch("./data.json");
+    const response = await fetch("https://raw.githubusercontent.com/LauBetancur/Entrega-2-/main/data.json");
     const data = await response.json();
     return data;
 };
