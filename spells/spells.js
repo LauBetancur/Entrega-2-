@@ -12,3 +12,23 @@ const renderizarHechizos = async () => {
 };
 
 document.addEventListener("DOMContentLoaded", renderizarHechizos);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const barraBusqueda = document.querySelector('.search-bar input');
+    console.log(barraBusqueda); 
+
+    barraBusqueda.addEventListener('input', () => {
+        console.log('Input detectado'); 
+        const textoBusqueda = barraBusqueda.value.toLowerCase();
+        const hechizos = document.querySelectorAll('.productos__producto');
+
+        hechizos.forEach(hechizo => {
+            const nombreHechizo = hechizo.querySelector('h2').textContent.toLowerCase();
+            if (nombreHechizo.includes(textoBusqueda)) {
+                hechizo.style.display = 'block';
+            } else {
+                hechizo.style.display = 'none';
+            }
+        });
+    });
+});

@@ -17,7 +17,7 @@ const renderizarHechizos = async () => {
     const cards = document.querySelectorAll('.productos__producto');
     const totalCards = cards.length;
 
-    // Función para mostrar el carrusel en la posición actual
+    
     const showCards = () => {
         cards.forEach((card, index) => {
             if (index >= currentIndex && index < currentIndex + 3) {
@@ -28,15 +28,13 @@ const renderizarHechizos = async () => {
         });
     };
 
-    // Función para avanzar el carrusel
     const nextSlide = () => {
         if (currentIndex < totalCards - 3) {
             currentIndex++;
             showCards();
         }
     };
-
-    // Función para retroceder el carrusel
+   
     const prevSlide = () => {
         if (currentIndex > 0) {
             currentIndex--;
@@ -44,17 +42,12 @@ const renderizarHechizos = async () => {
         }
     };
 
-    // Event listeners para los botones de navegación
     btnNext.addEventListener('click', nextSlide);
     btnPrev.addEventListener('click', prevSlide);
 
-    // Agregar los botones al contenedor
     contenedorBotones.appendChild(btnPrev);
     contenedorBotones.appendChild(btnNext);
 
-    // Mostrar las primeras cartas al cargar la página
     showCards();
 };
-
-// Llamar a la función para renderizar los hechizos
 renderizarHechizos();
