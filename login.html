@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REDOlog</title>
-    <link rel="stylesheet" href="Log-in_styles.css" type="text/css">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Concert+One&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Concert+One&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   </head>
   <body>
     <section class="container">
@@ -15,26 +16,27 @@
       <div class="imagen">
         <img class="img" src="../web page jjk assets/avatar_makata_vespa_04 1 (1).png" alt="imagen">
       </div>
-      <form class="container__child">
+      <form class="container__child" id="login">
         <div class="container__child__logo">
           <a href="../index.html">
-          <img id="jjk" src="../web page jjk assets/logo and icons/logo jjk.png" alt="logo"></a>
+            <img id="jjk" src="../web page jjk assets/logo and icons/logo jjk.png" alt="logo">
+          </a>
         </div>
         <div class="container__child__title">
           <h1 id="tittle__log">Login</h1>
         </div>
         <div class="container__child__info">
           <div class="info__email">
-            <Div class="email--content">
+            <div class="email--content">
               <label class="etiqueta">Email</label>
-              <input class="in" type="email" placeholder="username@gmail.com">
-            </Div>
+              <input class="in" type="email" id="correo" placeholder="username@gmail.com" required>
+            </div>
           </div>
           <div class="info__password">
-            <Div class="password--content">
+            <div class="password--content">
               <label class="etiqueta">Password</label>
-              <input class="in" type="password" placeholder="Password" required>
-            </Div>
+              <input class="in" type="password" id="contrasena" placeholder="Password" required>
+            </div>
           </div>
           <div class="info__href">
             <a class="href__forgot" href="#">Forgot password?</a>
@@ -65,11 +67,11 @@
             </div>
           </div>
           <div class="container__additional__register">
-            <span class="etiqueta">Don't have an account? <a CLASS="additional_register-href" href="../register/register.html">Register for free</a>
-            </span>
+            <span class="etiqueta">Don't have an account? <a class="additional_register-href" href="../register/register.html">Register for free</a></span>
           </div>
         </div>
       </form>
     </section>
+    <script type="module" src="login.js"></script>
   </body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Concert+One&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  </head>
+  <body>
+    <section class="container">
+      <section class="container__content">
+        <div class="container__content__img">
+          <a href="../index.html"><img id="container__content__img--logo" src="../web page jjk assets/logo and icons/logo jjk.png"  alt="logo"> </a>
+        </div>
+        <div class="container__content__title">
+          <h1 id="tittle--createaccount">Create your account</h1>
+        </div>
+        <form id="registro">
+          <div class="container__content__form">
+            <div class="container__content__form__fullname">
+              <div class="container__content__form--fullname--firstname">
+                <label class="etiqueta">Name</label>
+                <input class="input1" type="text" id="nombre" placeholder="First name" required>
+              </div>
+              <div class="container_content__form--fullname--lastname">
+                <label class="etiqueta">Last name</label>
+                <input class="input1" type="text" id="apellido" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="container__content__form__contact">
+              <div class="container__content__form--contact--email">
+                <label class="etiqueta">Email</label>
+                <input class="input1" type="email" id="correo" placeholder="Username@gmail.com" required>
+              </div>
+              <div class="container__content__form--contact--phonenumber">
+                <label class="etiqueta">Phone number</label>
+                <input class="input1" type="tel" id="telefono" placeholder="Phone number">
+              </div>
+            </div>
+            <div class="container__content__form--passwords">
+              <div class="container__content__form--passwords--password">
+                <label class="etiqueta">Password</label>
+                <input class="input1" type="password" id="contrasena" placeholder="Password" required>
+              </div>
+              <div class="container__content__form--passwords--repeatpassword">
+                <label class="etiqueta">Confirm Password</label>
+                <input class="input1" type="password" id="confirmarContrasena" placeholder="Confirm Password" required>
+              </div>
+            </div>
+          </div>
+          <div class="container__content__submit">
+            <div class="container__content__submit--button">
+              <input class="content__submit--button--signup" type="submit" value="Sign up">
+            </div>
+            <div class="container__content__submit--Sign">
+              <span class="etiqueta">
+                Already have an account?
+                <a class="content__submit--Sign--href" href="./login.html">Sign in</a>
+              </span>
+            </div>
+          </div>
+        </form>
+      </section>
+    </section>
+    <section class="container__ilustration">
+      <img class="container__ilustration--img" src="../web page jjk assets/logo and icons/MegumiBig.png" alt="ilustration">
+    </section>
+    <script type="module" src="register.js"></script>
+  </body>
+</html>
