@@ -13,7 +13,7 @@ const render = () => {
     try {
       registrar(correo, contrasena, confirmarContrasena);
       alert("Usuario registrado exitosamente");
-      window.location.href = "../log-in/Log-in.html";
+      window.location.href = "./login.html";
     } catch (error) {
       alert(error.message);
     }
