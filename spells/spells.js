@@ -1,5 +1,5 @@
 import { obtenerHechizos, Spell } from "./utils-spells.js";
-import { obtenerUsuarioEnSesion, logout } from "./session.js";
+import { obtenerUsuarioEnSesion, logout } from "..//session.js";
 
 const renderizarHechizos = async () => {
     const contenedorProductos = document.querySelector('.personajes-lista');
@@ -12,7 +12,7 @@ const renderizarHechizos = async () => {
     }
     const usuarioActivo = obtenerUsuarioEnSesion();
     if (!usuarioActivo) {
-      window.location.href = "./login.html";
+      window.location.href = "..//login.html";
       return;
     }
 };
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           authButton.innerHTML = '<button type="button" class="log-out">Cerrar sesión</button>';
           authButton.querySelector("button").addEventListener("click", () => {
             logout();
-            window.location.href = "index.html";
+            window.location.href = "..//index.html";
           });
         } else {
           authButton.innerHTML = '<a href="log-in/login.html"><button type="button" class="log-in">Iniciar sesión</button></a>';
