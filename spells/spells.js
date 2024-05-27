@@ -1,4 +1,5 @@
 import { obtenerHechizos, Spell } from "./utils-spells.js";
+import { obtenerUsuarioEnSesion, logout } from "./session.js";
 
 const renderizarHechizos = async () => {
     const contenedorProductos = document.querySelector('.personajes-lista');
@@ -9,16 +10,19 @@ const renderizarHechizos = async () => {
         const elementoHTML = nuevoHechizo.render();
         contenedorProductos.appendChild(elementoHTML);
     }
+    const usuarioActivo = obtenerUsuarioEnSesion();
+    if (!usuarioActivo) {
+      window.location.href = "./login.html";
+      return;
+    }
 };
 
-document.addEventListener("DOMContentLoaded", renderizarHechizos);
+document.addEventListener("DOMContentLoaded", () => {
+    renderizarHechizos();
 
-document.addEventListener('DOMContentLoaded', () => {
     const barraBusqueda = document.querySelector('.search-bar input');
-    console.log(barraBusqueda); 
 
     barraBusqueda.addEventListener('input', () => {
-        console.log('Input detectado'); 
         const textoBusqueda = barraBusqueda.value.toLowerCase();
         const hechizos = document.querySelectorAll('.productos__producto');
 
@@ -31,4 +35,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    const gestionarAutenticacion = () => {
+        const authButton = document.getElementById("auth-button");
+        const usuarioEnSesion = obtenerUsuarioEnSesion();
+      
+        if (usuarioEnSesion) {
+          authButton.innerHTML = '<button type="button" class="log-out">Cerrar sesión</button>';
+          authButton.querySelector("button").addEventListener("click", () => {
+            logout();
+            window.location.href = "index.html";
+          });
+        } else {
+          authButton.innerHTML = '<a href="log-in/login.html"><button type="button" class="log-in">Iniciar sesión</button></a>';
+        }
+    };
+
+    gestionarAutenticacion();
+});
+
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem('paginaReiniciada');
 });
