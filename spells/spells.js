@@ -1,4 +1,4 @@
-import { obtenerHechizos, Spell } from "./utils-spells.js";
+import { obtenerHechizos, Spell } from "..//spells/utils-spells.js";
 import { obtenerUsuarioEnSesion, logout } from "..//session.js";
 
 const renderizarHechizos = async () => {
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
           authButton.innerHTML = '<button type="button" class="log-out">Cerrar sesión</button>';
           authButton.querySelector("button").addEventListener("click", () => {
             logout();
-            window.location.href = "..//index.html";
+            window.location.href = "index.html";
           });
         } else {
           authButton.innerHTML = '<a href="log-in/login.html"><button type="button" class="log-in">Iniciar sesión</button></a>';
@@ -54,6 +54,3 @@ document.addEventListener("DOMContentLoaded", () => {
     gestionarAutenticacion();
 });
 
-window.addEventListener('beforeunload', () => {
-  sessionStorage.removeItem('paginaReiniciada');
-});

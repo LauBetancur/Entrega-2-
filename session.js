@@ -66,3 +66,30 @@ export const obtenerUsuarioEnSesion = () => {
 export const logout = () => {
   localStorage.removeItem(USUARIO_ACTIVO_KEY);
 };
+export const obtenerFavoritos = async () => {
+  const usuario = obtenerUsuarioEnSesion();
+  if (!usuario) {
+    return [];
+  }
+
+  const data = await obtenerHechizos();
+  return data.filter(hechizo => usuario.favoritos.includes(hechizo.id));
+};
+
+export const agregarFavorito = (idProducto) => {
+  const usuarios = obtenerUsuarios();
+  const usuarioActivoId = parseInt(localStorage.getItem(USUARIO_ACTIVO_KEY), 10);
+  const usuario = usuarios.find(usuario => usuario.id === usuarioActivoId);
+
+  if (!usuario) {
+    throw new Error("No hay un usuario activo");
+  }
+
+  if (usuario.favoritos.includes(idProducto)) {
+    usuario.favoritos = usuario.favoritos.filter(favorito => favorito !== idProducto);
+  } else {
+    usuario.favoritos.push(idProducto);
+  }
+
+  localStorage.setItem(USUARIOS_KEY, JSON.stringify(usuarios));
+};
