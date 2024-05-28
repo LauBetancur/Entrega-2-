@@ -22,8 +22,8 @@ const render = () => {
         }
 
         const updatedInfo = {
-            nombre: document.getElementById('firstName').value,
-            apellido: document.getElementById('lastName').value,
+            nombre: usuarioActivo.nombre,
+            apellido: usuarioActivo.apellido,
             correo: document.getElementById('email').value,
             contrasena: newPassword || usuarioActivo.contrasena
         };
