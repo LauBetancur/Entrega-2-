@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="userprofile.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Concert+One&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <section class="child__container__accountsettings">
+            <div class="accountsettings__tittle">
+                <h1 id="accountsettings__tittle--account">Account Settings</h1>
+            </div>
+            <div class="accountsettings__fullnames">
+                <div class="fullnames--firstname">
+                    <label class="etiqueta">First Name</label>
+                    <input id="firstName" class="in" type="text" readonly>
+                </div>
+                <div class="fullnames--lastname">
+                    <label class="etiqueta">Last Name</label>
+                    <input id="lastName" class="in" type="text" readonly>
+                </div>
+            </div>
+            <div class="child__container__userprofile">
+                <div class="userprofile--email">
+                    <label class="etiqueta">Email</label>
+                    <input id="email" class="in2" type="email">
+                </div>
+                <div class="userprofile--password">
+                    <label class="etiqueta">Password</label>
+                    <input id="password" class="in2" type="password">
+                </div>
+                <div class="userprofile--newpassword">
+                    <label class="etiqueta">New Password</label>
+                    <input id="newPassword" class="in2" type="password">
+                </div>
+            </div>
+            <div class="child__container__confirnbtn">
+                <div class="confirnbtn--change">
+                    <button id="changeButton" class="btn2">Change</button>
+                </div>
+                <div class="confirnbtn--logout">
+                    <button id="logoutButton" class="btn3">Logout</button>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card__pfp"></div>
+            <div class="card__pfp--name">
+                <h1 id="pfp--name--username"></h1>
+            </div>
+            <div class="card__pfp--desc">
+                <button id="desc--btn">Account</button>
+            </div>
+            <div class="card__pfp--logo">
+                <a href="../index.html">
+                    <img id="card__pfp-logo--jjk" src="./web page jjk assets/logo and icons/logo jjk.png" alt="logo">
+                </a>
+            </div>
+        </section>
+    </section>
+    <script type="module" src="userprofile.js"></script>
+</body>
+</html>
