@@ -9,7 +9,7 @@ const obtenerUsuarios = () => {
   return JSON.parse(usuarios);
 };
 
-export const registrar = (correo, contrasena, confirmarContrasena) => {
+export const registrar = (correo, contrasena, confirmarContrasena, nombre, apellido) => {
   if (contrasena !== confirmarContrasena) {
     throw new Error("Las contraseñas no coinciden");
   }
@@ -25,6 +25,8 @@ export const registrar = (correo, contrasena, confirmarContrasena) => {
     id: new Date().getTime(),
     correo: correo,
     contrasena: contrasena,
+    nombre: nombre,
+    apellido: apellido,
     favoritos: [],
   });
 

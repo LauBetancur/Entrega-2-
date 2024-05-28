@@ -12,14 +12,20 @@ const render = () => {
     document.getElementById('firstName').value = usuarioActivo.nombre || '';
     document.getElementById('lastName').value = usuarioActivo.apellido || '';
     document.getElementById('email').value = usuarioActivo.correo;
-    document.getElementById('password').value = usuarioActivo.contrasena;
 
     document.getElementById('changeButton').addEventListener('click', () => {
+        const newPassword = document.getElementById('newPassword').value;
+
+        // Lógica para cambiar la contraseña
+        if (newPassword) {
+            usuarioActivo.contrasena = newPassword;
+        }
+
         const updatedInfo = {
             nombre: document.getElementById('firstName').value,
             apellido: document.getElementById('lastName').value,
             correo: document.getElementById('email').value,
-            contrasena: document.getElementById('newPassword').value || usuarioActivo.contrasena
+            contrasena: newPassword || usuarioActivo.contrasena
         };
 
         try {
@@ -31,7 +37,8 @@ const render = () => {
         }
     });
 
-    document.getElementById('cancelButton').addEventListener('click', () => {
+    document.getElementById('logoutButton').addEventListener('click', () => {
+        logout();
         window.location.href = '../index.html';
     });
 
