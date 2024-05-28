@@ -1,5 +1,3 @@
-import { obtenerUsuarioEnSesion, agregarFavorito } from "../session.js"
-
 export const obtenerHechizos = async () => {
     const response = await fetch("spells.json");
     const data = await response.json();
@@ -34,14 +32,7 @@ export class Spell {
         label.addEventListener('click', function (event) {
             event.preventDefault();
             label.classList.toggle('checked');
-            agregarFavorito(this.id);
-        
         });
-
-        const usuarioActivo = obtenerUsuarioEnSesion();
-        if (usuarioActivo && usuarioActivo.favoritos.includes(this.id)) {
-          label.classList.add('checked');
-        }
 
         link.appendChild(img);
         link.appendChild(h2);
@@ -51,4 +42,3 @@ export class Spell {
         return producto;
     };
 }
-

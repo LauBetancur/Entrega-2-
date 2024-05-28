@@ -62,35 +62,6 @@ export const obtenerUsuarioEnSesion = () => {
 export const logout = () => {
   localStorage.removeItem(USUARIO_ACTIVO_KEY);
 };
-<<<<<<< HEAD
-export const obtenerFavoritos = async () => {
-  const usuario = obtenerUsuarioEnSesion();
-  if (!usuario) {
-    return [];
-  }
-
-  const data = await obtenerHechizos();
-  return data.filter(hechizo => usuario.favoritos.includes(hechizo.id));
-};
-
-export const agregarFavorito = (idProducto) => {
-  const usuarios = obtenerUsuarios();
-  const usuarioActivoId = parseInt(localStorage.getItem(USUARIO_ACTIVO_KEY), 10);
-  const usuario = usuarios.find(usuario => usuario.id === usuarioActivoId);
-
-  if (!usuario) {
-    throw new Error("No hay un usuario activo");
-  }
-
-  if (usuario.favoritos.includes(idProducto)) {
-    usuario.favoritos = usuario.favoritos.filter(favorito => favorito !== idProducto);
-  } else {
-    usuario.favoritos.push(idProducto);
-  }
-
-  localStorage.setItem(USUARIOS_KEY, JSON.stringify(usuarios));
-};
-=======
 
 export const updateUserInfo = (updatedInfo) => {
   const usuarios = obtenerUsuarios();
@@ -106,4 +77,3 @@ export const updateUserInfo = (updatedInfo) => {
 
   throw new Error("Usuario no encontrado");
 };
->>>>>>> ee2f3d07d3da7832b6869427e87f5107db995d4a
