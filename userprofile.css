@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url(https://jujutsukaisen.jp/images/top_r/mv_re_new.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  border-radius: 1.875rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 57.124vw;
+  height: 46.2963vh;
+  max-width: 100%;
+  min-height: 480px;
+  background-color: white;
+}
+
+.child__container__accountsettings {
+  margin-left: 1.5rem;
+  position: absolute;
+  align-items: center;
+  width: 65%;
+  height: 500px;
+  border-radius: 1.875rem;
+  padding: 0.625rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+}
+
+.accountsettings__tittle {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  align-content: center;
+  align-items: center;
+}
+
+#accountsettings__tittle--account {
+  margin-left: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #414042;
+}
+
+.accountsettings__fullnames {
+  margin-left: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  flex-direction: row;
+}
+
+.fullnames--firstname, .fullnames--lastname {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+}
+
+.child__container__userprofile {
+  margin-left: 1.5rem;
+  display: flex;
+  width: 100%;
+  height: 33vh;
+  flex-direction: column;
+}
+
+.userprofile--email, .userprofile--password, .userprofile--newpassword {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  width: 100%;
+  height: 9vh;
+}
+
+.etiqueta {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.in, .in2 {
+  background-color: #eee;
+  border: none;
+  margin: 0.125rem 0;
+  padding: 0.75rem 1.875rem;
+  font-size: 0.7rem;
+  border-radius: 1.875rem;
+  outline: none;
+  width: 12vw;
+  height: 4.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.in2 {
+  width: 16vw;
+}
+
+::placeholder {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.child__container__confirnbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  width: 100%;
+}
+
+.confirnbtn--change, .confirnbtn--cancel {
+  display: flex;
+  width: 10vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.btn2, .btn3 {
+  color: #fff;
+  background-color: #414042;
+  padding: 0.75rem 1.875rem;
+  border-radius: 1.875rem;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn2:hover, .btn3:hover {
+  background-color: #333;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 30%;
+  background-color: #f5f5f5;
+  border-radius: 1.875rem;
+}
+
+.card__pfp {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-bottom: 1rem;
+}
+
+.card__pfp--name {
+  margin-bottom: 1rem;
+}
+
+#pfp--name--username {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #414042;
+}
+
+.card__pfp--desc {
+  margin-bottom: 1rem;
+}
+
+#desc--btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #414042;
+  background-color: #eee;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#desc--btn:hover {
+  background-color: #ddd;
+}
+
+.card__pfp--logo {
+  margin-top: 1rem;
+}
+
+#card__pfp-logo--jjk {
+  width: 50px;
+  height: auto;
+}
