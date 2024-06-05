@@ -139,7 +139,7 @@ body {
 
 .btn2, .btn3 {
   color: #fff;
-  background-color: #414042;
+  background-color: #8d4ad0;
   padding: 0.75rem 1.875rem;
   border-radius: 1.875rem;
   border: none;
@@ -148,6 +148,22 @@ body {
   font-weight: 500;
   font-size: 0.8rem;
   transition: background-color 0.3s ease;
+}
+
+.btn3 {
+  color: #fff;
+  background-color: #8d4ad0;
+  padding: 0.75rem 1.875rem;
+  border-radius: 1.875rem;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+  margin-right: 6rem;
+  margin-top: 1rem;
+  
 }
 
 .btn2:hover, .btn3:hover {
@@ -171,6 +187,7 @@ body {
   border-radius: 50%;
   background-color: #ddd;
   margin-bottom: 1rem;
+  
 }
 
 .card__pfp--name {
