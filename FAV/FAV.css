@@ -62,11 +62,11 @@
    font-weight: bold;
    
   }
-  .nav-links ul li::after{
-    content:'';
+  .nav-links ul li::after {
+    content: '';
     width: 0%;
     height: 2px;
-    background:rgba(15, 188, 221, 1) ;
+    background: rgba(15, 188, 221, 1);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -83,7 +83,21 @@
     width: 60px;
     border-radius: 5rem;
   }
-
+.btn3 {
+  background-color: rgba(183, 152, 226, 1);
+  border: none;
+  color: white;
+  padding: 0.563rem 3.125rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.938rem;
+  font-weight: bold;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+.btn3:hover {
+  background-color: #333;
+}
   h1{
     color: white;
     font-size: 6rem;
@@ -106,47 +120,55 @@
     padding-bottom: 4rem;
   }
 
-  .productos{
-  text-align: center;
-  color: white;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  .productos {
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
   }
-
-  .productos ul{
+  
+  .productos ul {
     list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-
-  .productos li.productos__producto{
+  
+  .productos li.productos__producto {
     width: 15.625rem;
-   margin: 0.625rem;
-   margin-bottom: 10rem;
-   padding: 1.25rem ;
-   border-radius: 0.625rem;
-   background-color: rgba(12, 2, 28, .4);
-   box-shadow: 5px 7px 15px rgba(181, 153, 226, 1) ;
-   text-align: center;
-   
-   
+    margin: 0.625rem;
+    margin-bottom: 4rem;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    background-color: rgba(12, 2, 28, 0.4); 
+    box-shadow: 5px 7px 15px rgba(181, 153, 226, 1);
+    text-align: center;
+    transition: transform 0.6s ease;
   }
-
-  .productos li.productos__producto img{
+  
+  .productos li.productos__producto:hover {
+    transform: translateY(-20px);
+  }
+  
+  .productos li.productos__producto img {
     border-radius: 0.625rem;
     height: 9.375rem;
+    width: 9.375rem ;
     object-fit: cover;
+    cursor: pointer;
   }
-
-  .productos li.productos__producto h3{
+  
+  .productos li.productos__producto h2 {
+    color: white;
     font-size: 1rem;
     margin-top: 0.625rem;
     margin-bottom: 0.313rem;
+    text-decoration: none;
+    text-decoration-color: none;
   }
-
+  
   
   footer{
     background-color: rgba(20, 7, 41, 1);

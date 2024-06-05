@@ -1,8 +1,8 @@
-export const obtenerHechizos = async () => {
+export async function obtenerHechizos() {
     const response = await fetch("spells.json");
     const data = await response.json();
     return data;
-};
+}
 
 export class Spell {
     constructor(id, name, image) {
@@ -25,20 +25,16 @@ export class Spell {
         const h2 = document.createElement("h2");
         h2.textContent = this.name;
 
-        const label = document.createElement("label");
-        label.classList.add("star");
-        label.innerHTML = '<i class="far fa-star"></i>';
-
-        label.addEventListener('click', function (event) {
-            event.preventDefault();
-            label.classList.toggle('checked');
-        });
+        // Crear el botón "Add"
+        const addButton = document.createElement("button");
+        addButton.textContent = "Add";
+        addButton.classList.add("add-button");
 
         link.appendChild(img);
         link.appendChild(h2);
-        link.appendChild(label);
-
+        
         producto.appendChild(link);
+        producto.appendChild(addButton);  // Añadir el botón fuera del enlace
         return producto;
     };
 }

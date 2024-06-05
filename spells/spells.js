@@ -1,13 +1,26 @@
-import { obtenerHechizos, Spell } from "./utils-spells.js";
-import { obtenerUsuarioEnSesion, logout } from "..//session.js";
+import { obtenerHechizos, Spell } from "..//spells/utils-spells.js";
+import { obtenerUsuarioEnSesion, agregarFavorito, logout } from "..//session.js";
 
 const renderizarHechizos = async () => {
     const contenedorProductos = document.querySelector('.personajes-lista');
-
     const hechizos = await obtenerHechizos();
     for (const hechizo of hechizos) {
         const nuevoHechizo = new Spell(hechizo.id, hechizo.name, hechizo.image);
         const elementoHTML = nuevoHechizo.render();
+
+        // Add event listener for the "Add" button
+        const addButton = elementoHTML.querySelector('.add-button');
+        addButton.addEventListener('click', () => {
+          try {
+            agregarFavorito({ id: hechizo.id, name: hechizo.name, image: hechizo.image });
+            addButton.textContent = "Added";
+            addButton.disabled = true;
+            alert(`"${hechizo.name}" has been added to your favorites.`);
+          } catch (error) {
+            alert(error.message);
+          }
+        });
+
         contenedorProductos.appendChild(elementoHTML);
     }
     const usuarioActivo = obtenerUsuarioEnSesion();
@@ -19,13 +32,10 @@ const renderizarHechizos = async () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     renderizarHechizos();
-
     const barraBusqueda = document.querySelector('.search-bar input');
-
     barraBusqueda.addEventListener('input', () => {
         const textoBusqueda = barraBusqueda.value.toLowerCase();
         const hechizos = document.querySelectorAll('.productos__producto');
-
         hechizos.forEach(hechizo => {
             const nombreHechizo = hechizo.querySelector('h2').textContent.toLowerCase();
             if (nombreHechizo.includes(textoBusqueda)) {
@@ -34,26 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 hechizo.style.display = 'none';
             }
         });
+        document.getElementById('logoutButton').addEventListener('click', () => {
+          logout();
+          window.location.href = '../index.html';
+      });
+  
     });
 
-    const gestionarAutenticacion = () => {
-        const authButton = document.getElementById("auth-button");
-        const usuarioEnSesion = obtenerUsuarioEnSesion();
-      
-        if (usuarioEnSesion) {
-          authButton.innerHTML = '<button type="button" class="log-out">Cerrar sesión</button>';
-          authButton.querySelector("button").addEventListener("click", () => {
-            logout();
-            window.location.href = "..//index.html";
-          });
-        } else {
-          authButton.innerHTML = '<a href="log-in/login.html"><button type="button" class="log-in">Iniciar sesión</button></a>';
-        }
-    };
-
-    gestionarAutenticacion();
-});
-
-window.addEventListener('beforeunload', () => {
-  sessionStorage.removeItem('paginaReiniciada');
 });
